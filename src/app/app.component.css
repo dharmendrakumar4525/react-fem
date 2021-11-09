@@ -1,0 +1,48 @@
+header{
+    background-color: #435C46;
+    color: white;
+}
+
+span{
+    font-size: 12px;
+
+}
+
+
+.input-group{
+    width: 800px;
+}
+.form-control{
+    background: transparent;
+   
+}
+
+
+.opct{
+    opacity:0.60;
+}
+
+.imgbox{
+    width: 230px;  
+}
+
+.tbhead{
+        font-size: 20px;
+}
+
+.tbdata{
+    font-size: 15px;
+}
+
+.footerlogo{
+    background-color: #2e4731;
+}
+
+.des{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.pic{
+    margin-bottom: 35px;
+}

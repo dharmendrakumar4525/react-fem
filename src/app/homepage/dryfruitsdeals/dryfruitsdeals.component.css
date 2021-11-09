@@ -1,0 +1,38 @@
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.507);
+    
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+img{
+    background: black(0.5);
+   
+    
+}
+.card-group{
+    
+    padding: 10px 40px 40px 40px;
+}
+
+
+
+.heading{
+    margin-left: 40px;
+    margin-top: 40px;
+    font-weight: 500;
+
+    }
+
+    h1{
+    
+        font-weight: 600;
+        font-size: xx-large;
+    }

@@ -1,0 +1,29 @@
+.heading{
+    margin-left: 40px;
+    margin-top: 40px;
+    font-weight: 500;
+    }
+
+    .card{
+        border: none;
+    }
+    h4{
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+    .card-title{
+        font-weight: 500;
+        font-size: 26px;
+    }
+
+    .btn-success{
+        background-color: #435c46;
+        font-size: 13px;
+    }
+
+    h2{
+        color: #5F7461;
+        margin-left: 40px;
+        margin-top: 40px;
+    }

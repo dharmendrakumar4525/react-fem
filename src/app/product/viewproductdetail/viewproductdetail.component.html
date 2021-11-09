@@ -1,0 +1,73 @@
+<h1 class="heading">Product detail</h1>
+
+
+
+<div class="card m-4 " >
+    <div class="row no-gutters">
+        <div class="col-sm-5">
+            <img class="card-img "  [src]="productDetail[0].images[0].src" alt="productimg" style="height: 240px;">
+        </div>
+        <div class="col-sm-7">
+            <div class="card-body">
+                <h1 class="card-title">{{productDetail[0].name}}</h1>
+                <h4 >Rs {{productDetail[0].price}} /-</h4>
+                <p class="card-text">{{productDetail[0].description}}</p>
+                
+                <!-- Small button groups (default and split) -->
+<!-- <div mdbDropdown class="btn-group">
+  <button
+    class="btn btn-light btn-sm dropdown-toggle"
+    type="button"
+    mdbDropdownToggle
+    aria-expanded="false"
+  >
+  Quantity
+  </button>
+  <ul mdbDropdownMenu class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div> -->
+
+                 
+              
+            </div>
+            <button (click)=addtocart(productDetail[0]) class="btn btn-success ml-4 btn-sm">Add to cart</button>
+            <a href="#" class="btn btn-success ml-2 btn-sm">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+<h2>Description</h2>
+<hr style="margin: 5px 30px; border: 1px solid #5F7461;">
+<div style="margin: 40px; color: #707070; line-height: 2;">
+    {{productDetail[0].description}}
+   </div>
+
+
+<h2>Nutritional facts</h2>
+<hr style="margin: 5px 30px; border: 1px solid #5F7461;">
+<div style="margin: 40px; color: #707070; line-height: 2;">
+    Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.
+</div>
+
+
+<h2>overview</h2>
+<hr style="margin: 5px 30px; border: 1px solid #5F7461;">
+<div style="margin: 40px; color: #707070; line-height: 2;">
+    Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.
+</div>
+
+
+<h2>Customer Review</h2>
+<hr style="margin: 5px 30px; border: 1px solid #5F7461;">
+<div style="margin: 40px; color: #707070; line-height: 2;">
+    Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.
+</div>
+
+<br>
+<br>
+

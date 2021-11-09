@@ -1,0 +1,26 @@
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.507);
+    
+   
+    
+}
+
+.card-group{
+    background: #F0F3F3;
+    padding: 40px;
+}
+h1{
+    color: #B4FFEB;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    
+
+}
+

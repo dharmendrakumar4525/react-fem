@@ -1,0 +1,25 @@
+.card-group{
+    
+    padding: 10px 40px 40px 40px;
+}
+
+.heading{
+margin-left: 40px;
+margin-top: 40px;
+font-weight: 500;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .row > div[class*='col-'] {
+   display: flex;
+ }
+
+ .btn{
+   background-color: #435C46;
+   color: white;
+ }
+ 

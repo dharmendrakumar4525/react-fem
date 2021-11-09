@@ -1,0 +1,21 @@
+.signupform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: 50px auto;
+   
+    width: 60%;
+    padding: 60px;
+    
+  
+    box-shadow: 1px 1px 1px 1px grey;
+    
+    
+}
+.example-container{
+    display: flex;
+    flex-direction: column;
+    
+    
+   
+}

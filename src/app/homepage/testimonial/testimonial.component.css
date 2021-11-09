@@ -1,0 +1,18 @@
+
+.box{
+    background-color: #16795F0A;
+    border-radius: 20px;
+
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: 550;
+    line-height: 1;
+
+}
+
+.tname , .dis {
+    font-weight: 600;
+    font-size: 15px;
+}

@@ -1,0 +1,26 @@
+
+
+    <div class="signupform">
+
+        <form [formGroup]="loginForm" novalidate>
+        
+            <div class="example-container">
+            <h1 class="text-center" style="font-weight: 500; font-size: 35px;">Sign Up</h1>
+            <br>
+            <br>
+                <mat-form-field>
+                    <input matInput placeholder="Phone Number/E-Mail" formControlName="email">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="OTP" formControlName="otp">
+                </mat-form-field>
+    
+                <mat-form-field>
+                    <input matInput type="password" placeholder="Create Password" formControlName="password">
+                </mat-form-field>
+    
+              <button [disabled]="!loginForm.valid" mat-raised-button color="primary" mat-button>Sign Up</button>
+         </div>
+        </form>
+    </div>

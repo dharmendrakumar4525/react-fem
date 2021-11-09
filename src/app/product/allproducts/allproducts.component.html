@@ -1,0 +1,29 @@
+<h1 class="heading">Top Pick For You</h1>
+
+<div class="container-fluid">
+    <div class="row mr-3 ml-3">
+        <div class="col-sm-3  mt-4" *ngFor = "let product of productItem">
+<div class="card" >
+    <img
+    [src]="product.images[0].src"
+      class="card-img-top"
+      alt="..."/>
+    <div class="card-body">
+     <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text">
+        Rs. {{product.price}}/-
+      </p>
+      <a routerLink="viewproductdetail/{{product.id}}" routerLinkActive="active"  mdbBtn class="text-light btn btn-dark-green btn-sm" mdbWavesEffect>Product detail</a>
+    </div>
+  </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<br>
+<br>
+<br>

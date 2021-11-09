@@ -1,0 +1,105 @@
+<ng-container *ngIf="products.length !=0" >
+
+    <div class="card-group">
+        <div class="container-fluid bg-white text-black  " id="d">
+            <div class="row" *ngFor="let item of products ; let i = index ">
+                <span>{{i+1}}</span>
+                <div class="col-lg-4 col-md-5 col-sm-7 col-xm-8 p-4 ">
+                    <img class="img" [src]="item.images[0].src">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 pl-4">
+                    <h1 class="cartpname">{{item.name}}</h1>
+                    <select name="Grams" class="cartdrop mt-3">
+                        <option value="250 Grms">250 Grms</option>
+                        <option value="250 Grms">250 Grms</option>
+                        <option value="250 Grms">250 Grms</option>
+                        <option value="250 Grms">250 Grms</option>
+                    </select>
+                    <br>
+                    <select name="Package" class="cartdrop mt-3">
+                        <option value="4 Packs">4 Packs</option>
+                        <option value="4 Packs">4 Packs</option>
+                        <option value="4 Packs">4 Packs</option>
+                        <option value="4 Packs">4 Packs</option>
+                    </select>
+                    <div class="mt-3">
+                        <button (click)="removeItem(item)" class="cartbtn">Remove</button>
+                        &nbsp;
+                        <span class="vl"></span>
+                        &nbsp;
+                        <button class="cartbtn mb-3">Move to WishList</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-6 tot ">
+                    <div>
+                        <h5 class="carttotalhead mt-2"> Sub Total </h5>
+                    </div>
+                    <div>
+                        <h1 class="cartpprice mt-4"> ₹ {{item.total}} </h1>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        
+        <div class="container-fluid bg-white text-black  " id="d">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-7 col-xm-8 p-4 ">
+                   
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 pl-4">
+                    
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-6  pt-4" style="display: flex; justify-content: space-around; ">
+                    <div>
+                        <h5 class="carttotalhead "> Total </h5>
+                    </div>
+                    <div>
+                        <h1 class="cartpprice ml-2 "> ₹ {{grandTotal}} </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    
+    </div>
+    
+    <div class="container-fluid mb-5  ">
+        <button class="paybtn" >Continue to pay</button>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+
+</ng-container>
+
+
+
+
+<ng-container *ngIf="products.length ==0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">
+                My Cart
+            </h5>
+            <div class="center">
+            <h4>Your Cart Is Empty</h4>
+            <h6>Add Item To it now </h6>
+            <a routerLink="/allproducts" routerLinkActive="active" class="btn btn-primary">
+                Shop Now 
+            </a>
+        </div>
+        </div>
+    </div>
+</ng-container>
+<br>
+<br>
+<br>
